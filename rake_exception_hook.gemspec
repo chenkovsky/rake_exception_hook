@@ -1,15 +1,13 @@
 Gem::Specification.new do |s|
-  s.name        = 'rake_aws'
-  s.version     = '3.13'
+  s.name        = 'rake_exception_hook'
+  s.version     = '3.14'
   s.date        = '2015-03-21'
-  s.summary     = "aws/hadoop rake helper"
-  s.description = "make rake run on aws and hadoop painlessly."
+  s.summary     = "rake exception start end hook"
+  s.description = "rake exception start end hook"
   s.authors     = ["Chenkovsky.chen"]
   s.email       = 'chenkov@yeah.net'
-  s.files       = ["lib/aws.rb","lib/enter_exit_hook.rb"]
+  s.files       = ["lib/rake_exception_hook.rb"]
   s.homepage    =
-    'https://github.com/chenkovsky/rake_aws'
+    'https://github.com/chenkovsky/rake_exception_hook'
   s.license       = 'MIT'
-  s.add_dependency 'webhdfs'
-  s.add_dependency 'rake-hooks'
 end
