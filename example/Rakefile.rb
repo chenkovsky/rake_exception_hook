@@ -36,8 +36,8 @@ RakeExceptionHook.finish do
     puts "finish"
 end
 
-RakeExceptionHook.except do
-    puts "except"
+RakeExceptionHook.except do |e|
+    puts "except #{e}"
 end
 
 

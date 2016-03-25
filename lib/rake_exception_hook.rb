@@ -52,7 +52,7 @@ module Rake
         alias_method :old_display_error_message, :display_error_message
         def display_error_message(ex)
             if RakeExceptionHook.except_hook
-                RakeExceptionHook.except_hook.call
+                RakeExceptionHook.except_hook.call ex
             end
             old_display_error_message ex
         end
